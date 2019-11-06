@@ -13,6 +13,13 @@ app.get('/', (req, res) => {
    content : 'Questa pagina parla del mondo e di tanto altro'
  });
 });
+app.get('/profile', (req, res) => {
+  const person = people.profiles.find((p) => p.id === req.query.id);
+  res.render('profile', {
+    title: `About ${person.firstname} ${person.lastname}`,
+    person,
+  });
+});
 
 
 app.listen(3000, function () {
