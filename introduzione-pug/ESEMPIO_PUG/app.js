@@ -8,10 +8,12 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Homepage',
-    people: people.profiles
-  });
+   title: 'Homepage',
+   people: people.profiles,
+   content : 'Questa pagina parla del mondo e di tanto altro'
+ });
 });
+
 
 app.listen(3000, function () {
  console.log('Example app listening on port 3000!');
