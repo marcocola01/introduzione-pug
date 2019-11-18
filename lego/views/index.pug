@@ -10,8 +10,8 @@ html
    article.container
      each m in modello
        div.person
-         div.m-image(style=`background: url('/images/${m.imgSrc}') top center no-repeat; background-size: cover;`)
+         img(src=`/images/${m.imgSrc}`)
          h2.m-name
-           | #{m.firstname} #{m.lastname}
+           | #{m.SetName} 
          a(href=`/profile?id=${m.SetNumber}`)
            | Guarda Istruzione
