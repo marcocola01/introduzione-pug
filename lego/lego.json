@@ -4,21 +4,25 @@
      "SetNumber": "7897",
      "SetTheme":"Trains",
      "SetName":"Passenger Train",
-     "Year":"2006"
+     "Year":"2006",
+     "imgSrc": "7897b.jpg",
+     "instr":[]
    },
 
    {
      "SetNumber": "8157",
      "SetTheme":"Racers Ferrari",
      "SetName":"Ferrari F1 1:9",
-     "Year":"2008"
+     "Year":"2008",
+     "imgSrc": "8157b.jpg"
    },
 
    {
      "SetNumber": "4504",
      "SetTheme":"Star Wars Classic",
      "SetName":"Millennium Falcon",
-     "Year":"2004"
+     "Year":"2004",
+     "imgSrc": "4504b.jpg"
    }
       ]
 }
