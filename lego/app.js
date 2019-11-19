@@ -13,11 +13,11 @@ app.get('/', (req, res) => {
  });
 });
 
-app.get('/profile', (req, res) => {
+app.get('/modello', (req, res) => {
   const m = modello.profiles.find((p) => p.SetNumber === req.query.SetNumber);
   console.log("set number:" + req.query.SetNumber);
-  res.render('profile', {
-    title: `About ${m.SetName}`,
+  res.render('modello', {
+    title: `About ${m.SetNumber}`,
     m,
   });
 });
