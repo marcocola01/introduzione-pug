@@ -15,4 +15,6 @@ html
      p.profile-name #{m.SetTheme}
      p.profile-name #{m.Year}
      
-     div.profile img(src=`/images/${m.instr}`)
+   each img in m.instr 
+     div.profile 
+       img(src=`/images/${img}`)

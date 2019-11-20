@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 app.get('/modello', (req, res) => {
   const m = modello.profiles.find((p) => p.SetNumber === req.query.SetNumber);
-  console.log("set number:" + req.query.SetNumber);
+  //console.log(JSON.stringify(m));
   res.render('modello', {
     title: `About ${m.SetNumber}`,
     m,
